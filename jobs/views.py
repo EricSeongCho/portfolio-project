@@ -3,4 +3,4 @@ from .models import Job
 # Create your views here.
 def home(request):
     jobs = Job.objects
-    return render(request, 'jobs/Templates/home.html', {'jobs':jobs})
+    return render(request, 'jobs/Templates/jobs/home.html', {'jobs':jobs})
